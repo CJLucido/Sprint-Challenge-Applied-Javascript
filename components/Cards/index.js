@@ -25,7 +25,7 @@ axios
     .then(response => {
        // console.log(response);
 
-       console.log(response.data.articles.javascript)
+       //console.log(response.data.articles.technology)
        let bootVals =[];
         response.data.articles.bootstrap.forEach(object => {
                   bootVals.push(Object.values(object));
@@ -59,6 +59,48 @@ axios
             cardCase.appendChild(createCard(jsVals4));
             cardCase.appendChild(createCard(jsVals5));
 
+ let jQVals =[];
+    response.data.articles.jquery.forEach(object => {
+                  jQVals.push(Object.values(object));
+        });
+        let jQVals2 = [];
+       jQVals2 = jQVals.slice(0, 1);
+       let jQVals3 = [];
+       jQVals3 = jQVals.slice(1, 2);
+       let jQVals4 = [];
+       jQVals4 = jQVals.slice(2, 3);
+
+            cardCase.appendChild(createCard(jQVals2));
+            cardCase.appendChild(createCard(jQVals3));
+            cardCase.appendChild(createCard(jQVals4));
+
+ let nodeArr =[];
+    response.data.articles.node.forEach(object => {
+        nodeArr.push(Object.values(object));
+        });
+        let nodeArr2 = [];
+        nodeArr2 = nodeArr.slice(0, 1);
+       let nodeArr3 = [];
+       nodeArr3 = nodeArr.slice(1, 2);
+
+
+            cardCase.appendChild(createCard(nodeArr2));
+            cardCase.appendChild(createCard(nodeArr3));
+
+let techArr =[];
+    response.data.articles.technology.forEach(object => {
+        techArr.push(Object.values(object));
+        });
+        let techArr2 = [];
+        techArr2 = techArr.slice(0, 1);
+       let techArr3 = [];
+       techArr3 = techArr.slice(1, 2);
+       let techArr4 = [];
+       techArr4 = techArr.slice(2, 3);
+
+            cardCase.appendChild(createCard(techArr2));
+            cardCase.appendChild(createCard(techArr3));
+            cardCase.appendChild(createCard(techArr4));
         //     response.data.articles.javascript.forEach(object => {
         //         let newArray =[];
         //         newArray = Array.from(object);
