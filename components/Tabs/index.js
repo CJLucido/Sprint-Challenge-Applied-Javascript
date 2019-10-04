@@ -12,11 +12,11 @@ const tabHolder = document.querySelector('.topics');
 axios
     .get("https://lambda-times-backend.herokuapp.com/topics")
     .then( response => {
-        console.log(response);
+        //console.log(response);
         let info = [];
         info = response.data;
-        console.log(info);
-        console.log(info.topics);
+        //console.log(info);
+       // console.log(info.topics);
         let info2 = info.topics; //couldn't put info.topics.forEach
         info2.forEach(element => {
             tabHolder.appendChild(createTab(element));
@@ -25,7 +25,7 @@ axios
      
     })
     .catch(err => {
-        console.log("You gotta knock a little harder.")
+        console.log("You gotta knock a little harder.", error)
     });
 
 
