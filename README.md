@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+The DOM, or document object model, represents the html but is not the html. You can change it without affecting the actual document but your changes will be apparent locally. The document in DOM stand for the html document, the object in DOM stands for the object it creates using the tags in the html, and the model is the tree is makes to show where elements are nested.
+
 2. What is an event?
+
+When a user of a webpage does something while on the webpage, like use their mouse to click something or scroll down the page.
 
 3. What is an event listener?
 
+An event listener is a function that is initiated when a specific (outlined in the function as a parameter) event occurs. The event listener also holds the event handler that will then be initiated if that event parameter occurs.
+
 4. Why would we convert a NodeList into an Array?
 
+We would do this so that we can use more array methods (on the data) than just 'forEach'.
+
 5. What is a component?
+
+A component is a part of a program that only does one job, or set of jobs (if the component is made of other components), and can be reused in different larger programs.
 
 ### Git Set up
 
